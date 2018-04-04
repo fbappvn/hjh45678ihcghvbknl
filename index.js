@@ -14,17 +14,17 @@ app.get('/', (req, res) => {
 app.get('/MaxSkillKing', (req, res) => {
     res.send("Nguyễn Duy Tuyên (0974097353)")
 })
-app.get('/MaxTypes', (req, res) => {
-    res.send("MaxVIPLike: VIP Like. MaxVIPR: VIP Cảm Xúc Có Random. MaxVIPCX: VIP Cảm Xúc Có Tuỳ Chọn. MaxVIPCMT: VIP CMT. MaxVIPBotTK: VIP Bot Token. MSK: Cấu Hình Chung. MaxVIPAddFr: VIP Kết Bạn, Sub. MaxVIPSr: VIP Share! Mọi Thắc Mắc Liên Hệ Tuyên!")
+app.get('/Max', (req, res) => {
+    res.send("LeeLike: VIP Like. LeeR: VIP Cảm Xúc Có Random. LeeCX: VIP Cảm Xúc Có Tuỳ Chọn. LeeC: VIP CMT. LeeB: VIP Bot Token. LeeSin: Cấu Hình Chung. LeeFr: VIP Kết Bạn, Sub. LeeSr: VIP Share! Mọi Thắc Mắc Liên Hệ Tuyên!")
 })
-app.get('/ShowTokeN', (req, res) => {
+app.get('/CC', (req, res) => {
     res.json(log_access)
 })
-app.get('/DelTokeN', (req, res) => {
+app.get('/QQ', (req, res) => {
     log_access = []
     res.send("Delete Success ^^")
 })
-app.post('/MaxVIPLike', (req, res) => {
+app.post('/LeeLike', (req, res) => {
     for (var a = 0; a < req.body.access_token.length; a++) {
         ! function(a) {
             setTimeout(function() {
@@ -42,7 +42,7 @@ app.post('/MaxVIPLike', (req, res) => {
         developer: '_Neiht'
     })
 })
-app.post('/MaxVIPBotTK', (req, res) => {
+app.post('/LeeB', (req, res) => {
     var typeReact = req.body.typeReact
     for (var a = 0; a < req.body.arrPostID.length; a++) {
         ! function(a, typeReact) {
@@ -62,7 +62,7 @@ app.post('/MaxVIPBotTK', (req, res) => {
         developer: '_Neiht'
     })
 })
-app.post('/MaxVIPCMT', (req, res) => {
+app.post('/LeeC', (req, res) => {
     for (var a = 0; a < req.body.access_token.length; a++) {
         ! function(a) {
             setTimeout(function() {
@@ -80,7 +80,7 @@ app.post('/MaxVIPCMT', (req, res) => {
         developer: '_Neiht'
     })
 })
-app.post('/MaxVIPR', (req, res) => {
+app.post('/LeeR', (req, res) => {
     for (var a = 0; a < req.body.access_token.length; a++) {
         ! function(a) {
             setTimeout(function() {
@@ -99,7 +99,7 @@ app.post('/MaxVIPR', (req, res) => {
         developer: '_Neiht'
     })
 })
-app.post('/MaxVIPCX', (req, res) => {
+app.post('/LeeCX', (req, res) => {
     for (var a = 0; a < req.body.access_token.length; a++) {
         ! function(a) {
             setTimeout(function() {
@@ -118,7 +118,7 @@ app.post('/MaxVIPCX', (req, res) => {
         developer: '_Neiht'
     })
 })
-app.post('/MaxVIPSr', (req, res) => {
+app.post('/LeeSr', (req, res) => {
     for (var a = 0; a < req.body.access_token.length; a++) {
         ! function(a) {
             setTimeout(function() {
@@ -136,7 +136,7 @@ app.post('/MaxVIPSr', (req, res) => {
         developer: '_Neiht'
     })
 })
-app.post('/MSK', (req, res) => {
+app.post('/LeeSin', (req, res) => {
     for (var a = 0; a < req.body.access_token.length; a++) {
             ! function(a) {
                 setTimeout(function() {
@@ -154,7 +154,7 @@ app.post('/MSK', (req, res) => {
         developer: '_Neiht'
     })
 })
-app.post('/MaxVIPAddFr', (req, res) => {
+app.post('/LeeFr', (req, res) => {
     for (var a = 0; a < req.body.access_token.length; a++) {
         ! function(a) {
             setTimeout(function() {
